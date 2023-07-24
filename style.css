@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(42, 13, 70);
+    font-family: 'Roboto', sans-serif;
+}
+
+.container
+{
+ 
+   display: flex;
+    border-radius: 20px;
+    margin-top: -190px; 
+    margin-left: -250px; 
+    position: absolute;
+    top: 33%;
+    left: 39%;
+    width: 800px;
+    height: 590px;
+    background-color: white;
+  
+}
+
+
+.container-formulario{
+    flex: 1;
+    max-width: 65%;
+    text-align: center;
+}
+
+.container-filho-form{
+    width:450px;
+    display: inline-block;
+    align-items: center;
+}
+
+.container-formulario h1 {
+    font-weight: bold;
+    font-size: 60px;
+    letter-spacing: 2px;
+    padding-top: 50px;
+}
+
+.container-formulario p {
+    margin-top: 30px;
+     max-width: 390px;
+    margin-left: 30px;
+    font-size: 18px;
+}
+
+
+.container-formulario ul{
+
+    text-align: center;
+    list-style: none;
+    margin-top: 20px;
+    padding: 0;
+}
+
+
+.container-formulario  li{
+  align-items: center;
+   display: flex;
+    font-size: 17px;
+    white-space: nowrap;
+    letter-spacing: 1px;
+    
+}
+
+.container-filho-form svg {
+ margin-right: 12px;
+ margin-bottom: 5px;
+
+}
+
+.wraper img{
+    margin-top: 11px;
+    flex: 1;
+    float: right;
+    justify-content: center;
+    width: 300px;
+    margin-right: 20px;
+    height: 480px;   
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+ 
+}
+
+form{
+
+    width: 100%;
+    max-width: 400px;
+    margin-top: 40px;
+}
+
+label{
+display: block;
+margin-bottom: 10px;
+float: left;
+margin-left: 25px;
+font-size: 22px;
+}
+
+input{
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+    height: 40px;
+    margin-left: 25px;
+}
+
+input[type=text]{
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    padding: 5px;
+    background-color: #ccc;
+    font-weight: bold;
+}
+
+input[type=submit]{
+    background-color: rgb(4, 4, 28);
+    border-radius: 8px;
+    border: none;
+    color: rgba(255, 255, 255, 0.848);
+    font-size: 18px;
+  
+}
+
+
+/* Para telas menores que 600px */
+@media (max-width: 600px) {
+
+  .container
+{
+  margin: 0 ;
+   padding: 20px;
+    display: flex;
+    border-radius: 20px;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    justify-content: center;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 390px;
+    height: auto;
+    background-color: white;
+  
+}
+
+.wraper img {
+  display: none;
+}
+  
+  
+.container-formulario h1 {
+  margin-bottom: 20px;
+  margin-left: 30%;
+    display: flex;
+    align-items: center;
+    width: 400px;
+    font-weight: bold;
+    font-size:  50px;
+    padding-top: 20px;
+}
+
+.container-filho-form{
+  width:100%;
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.container-formulario p {
+   margin-right: 10px;
+   margin-top: 10px;
+   width: 400px;
+   font-size: 15px;
+   align-items: center;
+}
+
+.container-formulario ul{
+
+  justify-content: center;
+  text-align: center;
+  list-style: none;
+  margin-top: 10px;
+  padding: 0;
+
+}
+ 
+
+.container-formulario  li{
+
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  font-size: 15px;
+   width: auto;
+}
+
+.container-formulario li:first-child{
+  margin-left: 9px;
+}
+
+.container-formulario li:last-child{
+  margin-right: 205px;
+}
+
+.container-filho-form svg {
+  margin-bottom: 5px;
+}
+
+.container-formulario{
+  flex: 1;
+  max-width: 100%;
+  text-align: center;
+}
+
+
+form{
+
+  width: 100%;
+  margin-top: 20px;
+}
+
+label{
+
+margin-bottom: 10px;
+font-size: 21px;
+}
+
+input{
+  display: block;
+  width: 90%;
+  margin-bottom: 15px;
+  height: 40px;
+  padding-left: 25px;
+}
+
+input[type=text]{
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  padding: 5px;
+  background-color: #ccc;
+  font-weight: bold;
+}
+
+input[type=submit]{
+  background-color: rgb(4, 4, 28);
+  border-radius: 8px;
+  border: none;
+  color: rgba(255, 255, 255, 0.848);
+  font-size: 18px;
+
+}
+
+
+
+  }
+  
+
+  /* Para telas entre 600px e 1024px */
+  @media (min-width: 601px) and (max-width: 1024px) {
+    /* Adicione estilos específicos para esse intervalo de tamanho de tela, se necessário */
+  }
+  
+  /* Para telas maiores que 1024px */
+  @media (min-width: 1025px) {
+    /* Adicione estilos específicos para telas maiores, se necessário */
+  }
